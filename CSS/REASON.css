@@ -1,0 +1,130 @@
+.Reason{
+ position: relative;
+ width: 100%;
+ height: 500px; 
+ margin-top: 100px;
+ font-family: "RocknRoll One", sans-serif;
+
+ opacity: 0;
+ transform: translateX(1000px);
+ transition: all 1s ease;
+}
+
+.Reason.show2{
+  opacity: 1;
+  transform: translate(0,0);
+}
+
+ .ReasonPic{
+  position: absolute;
+  top: 5%;
+  width: 80%;
+  left: 20%;
+  height: 450px;
+  background-color: #d9c8a0e7;
+
+  transform: translateX(1000px);
+  opacity: 0;
+  transition: all 1s ease;
+ 
+}
+
+ .Reason.show2 .ReasonPic{
+   opacity: 1;
+   transform: translate(0,0);
+ }
+
+.ReasonPic::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../PICS/Canada.jpeg");
+  background-position: 50% 30%;
+  background-size: cover;
+  filter: saturate(40%);
+  
+ }
+
+.ReasonExplanation{
+  position: absolute;
+  top: 15%;
+  width: 70%;
+  left: 5%;
+  height: 300px;
+  background-color: white;
+  box-shadow: 2px 2px 12px black;
+  opacity: 0.8;
+  
+  transform: translateX(1000px);
+  opacity: 0;
+  transition: all 1s ease;
+  transition-delay: 0.2s;
+}
+
+
+ .Reason.show2 .ReasonExplanation {
+    opacity: 1;
+    transform: translate(0,0);}
+
+.ReasonExplanation h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ReasonSentence{
+    margin-top: 25px;
+    text-align: center;
+    line-height: 30px;
+
+    opacity: 0;
+    transform: translateY(12px);
+    transition: all 1s ease;
+    }
+
+ .Reason.show2 .ReasonSentence{
+    opacity: 1;
+    transform: translate(0,0);
+    transition-delay: 1s;
+ }
+
+@media (max-width: 768px) {
+
+  .Reason {
+    height: auto;
+    margin-top: 60px;
+    transform: none;
+    opacity: 1;
+  }
+
+  .ReasonPic {
+    position: relative;
+    width: 90%;
+    left: 0;
+    margin: 0 auto;
+    height: 250px;
+    transform: none;
+    opacity: 1;
+  }
+
+  .ReasonPic::before {
+    background-position: 50% 50%;
+  }
+
+  .ReasonExplanation {
+    position: relative;
+    width: 90%;
+    left: 0;
+    margin: 20px auto 0 auto;
+    height: auto;
+    padding: 20px;
+    transform: none;
+    opacity: 1;
+  }
+
+  .ReasonSentence {
+    opacity: 1;
+    transform: none;
+    margin-top: 15px;
+    line-height: 26px;
+  }
+}

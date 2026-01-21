@@ -1,0 +1,237 @@
+body{
+  background-color: #faf5e6;
+}
+
+.SUMMARY{
+    width: 1000px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /*background-color: antiquewhite;*/
+    margin: 420px auto 0 auto;
+    opacity: 0.8;
+
+    }
+
+.Square{
+  opacity: 0;
+  transition: 0.6s ease;
+}
+
+.Square.show{
+  opacity: 1;
+  transform: translate(0,0) rotate(0);
+
+}
+
+.UpperLeft{
+      
+        background-color:#23395B;
+        grid-column:1/5;
+        grid-row:2/5;
+        
+        font-family: "RocknRoll One", sans-serif;
+        color: #F5F5DC; 
+        text-shadow: 2px 2px 4px #000000;
+        transform: translate(-40px,-40px) rotate(-45deg);
+}
+
+
+      .BASIC{
+        text-align: center;
+        margin-top: 8px;
+      }
+
+      .label{
+         margin-top: 8px;
+         display: inline-block;
+         width: 100px;
+         text-align: center;
+         margin-right: 10px;
+       }
+
+
+      .UpperLeft ul{
+           margin-top: 35px;
+       }
+
+
+.UpperRight{
+        background-color: #6B715E;
+        grid-column: 5/9;
+        grid-row:1/5;
+        font-family: "RocknRoll One", sans-serif;
+        color: #FAEBD7;
+        text-shadow: 2px 2px 4px #000000;
+        transform: translate(40px,-40px) rotate(270deg);
+ }
+
+      .INTERESTS{
+        text-align: center;
+        margin-top: 8px;
+       }
+
+       .Hobby{
+        text-align: center;
+        margin-top: 25px;
+       }
+
+       .Hobby li{
+        margin-top: 15px;
+       }
+
+.BottomLeft{
+        background-color: #D9C8A0;
+        grid-column: 1/5;
+        grid-row: 5/8;
+        font-family: "RocknRoll One", sans-serif;
+        font-weight: bold;
+        color: #4a4848; 
+        text-shadow: 2px 2px 4px #FAEBD7;
+        transform: translate(-40px,40px) rotate(180deg);
+}
+
+        .STYLE{
+          text-align: center;
+        margin-top: 8px;
+        }
+
+        .Explanation{
+          text-align: center;
+          margin-top: 10px;
+        }
+
+        .StyleDetails{
+          margin-top: 20px;
+          margin-left: 20px;
+        }
+
+
+.BottomRight{
+         background-color: #D19A00;
+         grid-column: 5/9;
+         grid-row: 4/7 ;
+        font-family: "RocknRoll One", sans-serif;
+         color: #FAEBD7;
+         transform: translate(40px,40px) rotate(20deg);
+}
+
+       .Skills{
+          text-align: center;
+          margin-top: 8px;
+         text-shadow: 2px 2px 4px #000000;
+
+       }
+
+       .SkillsDetails{
+           margin-top: 20px;
+           text-align: center;
+           margin-left: 8px;
+         text-shadow: 2px 2px 4px #000000;
+
+       }
+
+        .SkillsDetails strong{
+            display: block;
+         text-shadow: 2px 2px 4px #000000;
+
+      }
+
+         .SkillsDetails li{
+            margin-bottom: 20px;
+         text-shadow: 2px 2px 4px #000000;
+
+      }
+
+         .ButtomSkills{
+            display: block;
+            text-decoration: none;
+            background-color: #ecc65e;
+            font-family: "RocknRoll One", sans-serif;
+            width: 100px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            margin: auto;
+            color: #000000;
+            box-shadow: 2px 2px 4px #4e4e4e;
+            border-radius: 5px;
+         }
+
+         .ButtomSkills:hover{
+            background-color: #f3dc9b;
+            width: 200px;
+            text-align: center;
+         }
+
+
+    .Center{
+        background-color: black;
+        grid-column: 2/4;
+        grid-row: 4/7;
+        background-image: url(../PICS/profile.png);
+        background-size: cover;
+    }
+
+
+    
+
+@media (max-width: 768px) {
+
+  .SUMMARY {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 100px auto 0 auto;
+  }
+
+  .Square {
+    
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .UpperLeft,
+  .UpperRight,
+  .BottomLeft,
+  .BottomRight {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .UpperLeft {
+    background-color: #23395B;
+  }
+
+  .UpperRight {
+    background-color: #6B715E;
+  }
+
+  .BottomLeft {
+    background-color: #D9C8A0;
+  }
+
+  .BottomRight {
+    background-color: #D19A00;
+  }
+
+ 
+  .label {
+    width: auto;
+    margin-right: 5px;
+  }
+
+  .StyleDetails,
+  .SkillsDetails {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
+
+
+

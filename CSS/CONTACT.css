@@ -1,0 +1,229 @@
+form{
+    margin: 0 20%;
+    height: 700px;
+    background-color: #2f3e4e;
+    margin-top: 15%;
+    font-family: "RocknRoll One", sans-serif;
+    transform: rotate(15deg);
+    opacity: 0.8;
+    color: #000000
+    
+    
+ }
+
+   .Contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight:bold;
+    padding-top: 5%;
+    
+   }
+
+      .C1{
+       font-size: 30px;
+       
+      }
+
+      .C2{
+        font-size: 10px;
+      }
+
+      .C3{
+        font-size: 15px;
+      }
+
+   .ContactInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    
+   
+   }
+
+      .NAME{
+       height: 50px;
+       font-size: 20px;
+       
+      }
+
+      .EMAIL{
+       height: 50px;
+       font-size: 20px;
+      }
+
+      .TEXT{
+        font-size: 20px;
+      }
+
+      .SUBMIT{
+         background-color: #6B715E;
+         border-color:#6B715E;
+         color: #FFFFFF;
+         border-radius: 10px;
+         box-shadow: 5px 5px 5px #6B715E;
+         margin-top: 10%;
+         height: 50px;
+         width:200px ;
+         margin-bottom: 10%;
+
+      }
+
+      .SUBMIT:hover{
+        background-color:#6d8636 ;
+        width: 250px;
+      }
+
+     
+      .ContactAll{
+        transform: rotate(-15deg);
+        background-color: #d4aa2f;
+      }
+
+      form{
+    margin: 0 20%;
+    height: 700px;
+    background-color: #2f3e4e;
+    margin-top: 15%;
+    font-family: "RocknRoll One", sans-serif;
+    transform: rotate(15deg);
+    opacity: 0.8;
+    color: #000000
+    
+    
+ }
+
+   .Contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight:bold;
+    padding-top: 5%;
+    
+   }
+
+      .C1{
+       font-size: 30px;
+       
+      }
+
+      .C2{
+        font-size: 10px;
+      }
+
+      .C3{
+        font-size: 15px;
+      }
+
+   .ContactInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    
+   
+   }
+
+      .NAME{
+       height: 50px;
+       font-size: 20px;
+       
+      }
+
+      .EMAIL{
+       height: 50px;
+       font-size: 20px;
+      }
+
+      .TEXT{
+        font-size: 20px;
+      }
+
+      .SUBMIT{
+         background-color: #6B715E;
+         border-color:#6B715E;
+         color: #FFFFFF;
+         border-radius: 10px;
+         box-shadow: 5px 5px 5px #6B715E;
+         margin-top: 10%;
+         height: 50px;
+         width:200px ;
+         margin-bottom: 10%;
+
+      }
+
+      .SUBMIT:hover{
+        background-color:#6d8636 ;
+        width: 250px;
+      }
+
+     
+      .ContactAll{
+        transform: rotate(-15deg);
+        background-color: #d4aa2f;
+      }
+
+      @media (max-width: 768px) {
+
+  form {
+    margin: 0 5%;
+    margin-top: 80px;
+    height: auto;
+    padding: 20px 0;
+    transform: none; /* 斜めを解除 */
+  }
+
+  .ContactAll {
+    transform: none; /* 斜め解除 */
+    background-color: #d4aa2f;
+    padding-bottom: 20px;
+  }
+
+  .Contact {
+    padding-top: 20px;
+  }
+
+  .C1 {
+    font-size: 24px;
+  }
+
+  .C2 {
+    font-size: 12px;
+  }
+
+  .C3 {
+    font-size: 14px;
+  }
+
+  .ContactInfo {
+    width: 90%;
+    margin: 20px auto 0 auto;
+  }
+
+  .NAME,
+  .EMAIL,
+  .TEXT {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .NAME,
+  .EMAIL {
+    height: 40px;
+  }
+
+  .TEXT {
+    height: 150px;
+  }
+
+  .SUBMIT {
+    width: 180px;
+    height: 45px;
+    margin-top: 40px;
+  }
+
+  .SUBMIT:hover {
+    width: 200px;
+  }
+}
