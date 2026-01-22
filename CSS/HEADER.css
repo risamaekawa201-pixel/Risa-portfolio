@@ -251,6 +251,8 @@ background-color:rgba(35, 57, 91, 0.9)
     margin-top: 20px;
     background-size: cover;
     background-position: center -20px;
+    backgronud-repeat: no-repeat;
 
   }
 }
+
